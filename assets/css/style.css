@@ -1,0 +1,251 @@
+:root{
+    --playfair: 'playfair display',sans-serif;
+    --airbnb: 'Airbnb Cereal App', sans-serif;
+    --text-black: #000;
+    --andcolor:#FECC99;
+    --backcolor:#FECC99;
+    --gradient:linear-gradient(180deg, rgba(26, 26, 26, 0.9) 0%, rgba(77, 77, 77, 0.95) 48.44%, rgba(23, 23, 23, 0.85) 100%);
+    --weight:500 !important;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+}
+
+.active::after{
+    content:'';
+    display:block;
+    width:50%;
+    margin:0 auto;
+    border-bottom:2px solid #FECC99;
+    transition:all 1s ease-in-out;
+}
+
+.navbar{
+    background:#fff;
+    transition:all 0.5s ease-in-out !important;
+}
+
+.navbar-brand{
+    font-family: var(--playfair);
+}
+
+.play{
+    font-family: var(--playfair);
+}
+
+.air{
+    font-family: var(--airbnb);
+}
+
+.spaced{
+    line-height: 20px !important;
+letter-spacing: 0.1em;
+}
+
+.whitespace{
+    height:80px;
+    width:100%;
+}
+
+.spacing{
+    letter-spacing: 0.05em;
+}
+
+.and, .aboutus{
+    color: var(--andcolor);
+}
+
+.aboutus, .clientsay{
+    display: inline-block;
+}
+
+.aboutdiv{
+    border-top: 2px solid #FECC99;
+    display: inline-block;
+    width:65px;
+    height:10px; 
+}
+
+.clientdiv{
+   border-top: 2px solid #000;
+display: inline-block;
+width:40px;
+height:7px; 
+}
+
+.lighttext{
+    font-weight: var(--weight) !important;
+}
+
+.servicediv{
+    border-top: 2px solid #FECC99;
+    display: inline-block;
+    width:25px;
+    height:10px;
+}
+
+a, .work{
+    color: var(--text-black) !important;
+    font-family: var(--airbnb) !important;
+    
+}
+
+a:hover{
+    color: var(--text-black);
+    text-decoration: none;
+}
+
+.header{
+    background: url('../images/Rectangle 2.png');
+    background-size: 100% 103%;
+}
+
+.colord, .submitbtn{
+    background: var(--backcolor) !important;
+}
+
+.about, .contact{
+    background-image: url('../images/Rectangle 4 (1).png');
+}
+
+.overlay{
+    background: var(--gradient)
+}
+
+.img_div{
+    width:400px;
+    height:420px;
+}
+
+.aboutimg{
+    z-index: 2;
+    position:absolute;
+    height:420px !important;
+    width:400px;
+}
+
+.img_div::before{
+    content: '';
+    width:400px;
+    height:420px;
+    border:2px solid #FECC99;
+    transform:translate(-15px, -15px);
+    position: absolute;
+    z-index: 0;
+}
+
+.img_div::after{
+    position: absolute;
+    content: '';
+    width:400px;
+    height:420px;
+    border:2px solid #FECC99;
+    transform:translate(15px, 15px);
+    z-index:0;
+}
+
+.client-name{
+    font-family: var(--playfair);
+    color: #4D4D4D;
+}
+
+.contactdiv{
+    border-top: 2px solid #FECC99;
+    display: inline-block;
+    width:45px;
+    height:10px;
+}
+
+.follow{
+    font-size: 1.5rem;
+    color: var(--andcolor) !important;
+}
+
+.insta{
+    width:36px;
+    height:36px;
+    background:#fff;
+    border-radius:50%;
+    align-items: center;
+}
+
+.phone{
+    font-size:1.3rem;
+}
+
+.footer{
+    background: rgba(26, 26, 26, 0.8);
+}
+
+input, textarea{
+    background:rgba(255, 255, 255, 0.5) !important;
+    border:none !important;
+}
+
+.port-img{
+    height:443px !important;
+}
+
+@media  screen and (max-width:990px){
+    .img_div, .img_div::before, .img_div::after, .aboutimg{
+        width:320px !important;
+    height:340px !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .orderdiv{
+        order:2 !important;
+    }
+    .orderd{
+        order:1 !important;
+    }
+
+    .card-body{
+        border:1px solid #e2e2e2 !important;
+        box-shadow: 2px 3px 10px #d8d8d8;
+    }
+
+    .client-img{
+        margin:0 auto !important;
+    }
+
+    /* .clientsay{
+        font-size: 1.1rem;
+    } */
+
+    .exquisite{
+        order:1 !important;
+    }
+    .exquisit{
+        order:2 !important;
+    }
+
+    .centre{
+        text-align: center;
+    }
+    .active::after{
+        display:none;
+    }
+
+    .whitespace:nth-child(1){
+        height:100px;
+    }
+}
+
+
+@media screen and (min-width:315px) and (max-width:768px){
+    .img_div, .img_div::before, .img_div::after, .aboutimg{
+        width:275px !important;
+    height:300px !important
+    }
+
+    .horimg{
+        width:100%;
+        height:100% !important;
+    }
+}
