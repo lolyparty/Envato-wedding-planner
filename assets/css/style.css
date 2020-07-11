@@ -190,14 +190,17 @@ input, textarea{
     border:none !important;
 }
 
-.port-img{
-    height:443px !important;
-}
+/* .portimg{
+    height:28% !important;
+} */
 
-@media  screen and (max-width:990px){
+@media  screen and (max-width:991px){
     .img_div, .img_div::before, .img_div::after, .aboutimg{
         width:320px !important;
     height:340px !important;
+    }
+    .active::after{
+        display:none;
     }
 }
 
@@ -232,9 +235,7 @@ input, textarea{
     .centre{
         text-align: center;
     }
-    .active::after{
-        display:none;
-    }
+    
 
     .whitespace:nth-child(1){
         height:100px;
