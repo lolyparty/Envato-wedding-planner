@@ -34,11 +34,11 @@ body{
 }
 
 .navbar-brand{
-    font-family: var(--playfair);
+    font-family: var(--playfair) !important;
 }
 
 .play{
-    font-family: var(--playfair);
+    font-family: var(--playfair) !important;
 }
 
 .air{
