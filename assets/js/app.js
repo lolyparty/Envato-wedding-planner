@@ -1,3 +1,7 @@
+//AOS
+AOS.init({
+  duration:1800,
+});
 
  //scroll spy
  $('body').scrollspy({target:'#navigate'});
