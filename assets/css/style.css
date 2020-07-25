@@ -19,6 +19,10 @@ body{
     overflow-x: hidden !important;
 }
 
+.container{
+    overflow-x: hidden !important;
+}
+
 .active::after{
     content:'';
     display:block;
