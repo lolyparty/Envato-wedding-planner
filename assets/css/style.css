@@ -19,6 +19,22 @@ body{
     overflow-x: hidden !important;
 }
 
+.scroll_top{
+    height:30px;
+    width:30px;
+    position: fixed;
+    top:80vh;
+    background:transparent;
+    right:3%;
+    z-index:10000000;
+}
+
+.fa.fa-arrow-up{
+    align-self: center;
+    color:#FECC99;
+    cursor: pointer;
+}
+
 .container{
     overflow-x: hidden !important;
 }
